@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter - Smarter Way To Convert</title>
+    <script defer src="main.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67b8a7d741.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="uppericons">
+        <DIV class="centre">
+                <button class="appsc" style="margin-top: 10px;" onclick="m()">Money Converter</button>
+                <button class="appsc" style="margin-top: 10px;" onclick="t()">Temperature Converter</button>
+                <button class="appsc" style="margin-top: 10px;" onclick="l()">Length Converter</button>
+            </DIV>
+                <div class="centremid">
+                <button class="appss" style="margin-top: 10px;background: linear-gradient(360deg, #fd6d2f 0%, #e62a15e9 100%);" onclick="cl()">Close</button>
+                </div>
+                <div class="centrebelow">
+                <button class="appsc" style="margin-top: 10px;" onclick="a()">Area Converter</button>
+                <button class="appsc" style="margin-top: 10px;" onclick="f()">Fuel Consumption Converter</button>
+                <button class="appsc" style="margin-top: 10px;"onclick="ti()">Time Converter</button>
+                </div>
+            </div>
+       
+       
+        <!-- MAIN LAYOUT -->
+        <div class="container">
+            <!-- MONEY CONVERTER -->
+            <div class="money">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Money Converter</p>
+                    <i class="fa-solid fa-money-bill-transfer" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+                    <select name="select" class="selectcountry">
+                        <option value="disable">Please Choose The Country</option>
+                        <option value="america">America</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="china">China</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                    <input type="text" class="rupee_input" placeholder="Enter The Indian Rupee :">
+                    <input type="text" class="money_result" placeholder="Here's Your Converted Result :">
+                    <button class="clearmoney">Clear</button>
+                </div>
+            </div>
+            <div class="temperature">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Temperature Converter</p>
+                    <i class="fa-solid fa-temperature-three-quarters" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+                    <select name="select" class="selecttemperature">
+                        <option value="disable">Please Choose The Unit</option>
+                        <option value="ferhenite">Ferhenite</option>
+                        <option value="kelvin">Kelvin</option>
+                    </select>
+                    <input type="text" class="temperature_input" placeholder="Enter The Temperature In Celcius:">
+                    <input type="text" class="temperature_result" placeholder="Here's Your Converted Result :">
+                    <button class="cleartemperature">Clear</button>
+                </div>
+
+            </div>
+            <div class="length">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Length Converter</p>
+                    <i class="fa-solid fa-ruler-horizontal" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+
+                    <select name="select" class="selectlength">
+                        <option value="disable">Please Choose The Unit</option>
+                        <option value="km">Kilometer</option>
+                        <option value="cm">Centimeter</option>
+                        <option value="mm">Millimeter</option>
+                        <option value="nm">Nanometer</option>
+                        <option value="micro">Micrometer</option>
+                        <option value="ft">Foot</option>
+                        <option value="inch">Inch</option>
+                    </select>
+                    <input type="text" class="length_input" placeholder="Enter The Number In Meter :">
+                    <input type="text" class="length_result" placeholder="Here's Your Converted Result :">
+                    <button class="clearlength">Clear</button>
+                </div>
+            </div>
+            <div class="area">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Area Converter</p>
+                    <i class="fa-solid fa-circle-nodes" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+                    <select name="select" class="selectarea">
+                        <option value="disable">Please Choose The Unit</option>
+                        <option value="square">Square</option>
+                        <option value="cube">Cube</option>
+                        <option value="rectangle">Rectangle</option>
+                        <option value="circle">Circle</option>
+                        <option value="triangle">Triangle</option>
+                        <option value="parallelogram">Parallelogram</option>
+                        <option value="rhombus">Rhombus</option>
+                        <option value="hexagon">Hexagon</option>
+                    </select>
+                    <div class="forsquare">
+                        <input type="text" class="arealength_input" placeholder="Enter The Length In Meter :">
+                        <input type="text" class="areabreadth_input" placeholder="Enter The Breadth In Meter :">
+                        <input type="text" class="areasquare_result" placeholder="Here's Your Result :">  
+                        <button class="clearareasquare">Clear</button>      
+                        <button class="areasquareresult">Calculate</button>
+                    </div>
+                    <div class="forcircle">
+                    <input type="text" class="circlearea_input" placeholder="Enter The Radius Meter :">
+                    <input type="text" class="circlearea_result" placeholder="Here's Your Result :">
+                    <button class="clearcirclearea">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fuel">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Fuel Consumption Converter</p>
+                    <i class="fa-solid fa-gas-pump" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+                    <input type="text" class="fuel_input" placeholder="Enter The Amount You Paid For Fuel :">
+                    <input type="text" class="fuelprice_input" placeholder="Enter The Price Per Litre Of The Fuel :">
+                    <input type="text" class="fuelkm_result" placeholder="Enter The Km You Drove After Refuelling :">
+                    <input type="text" class="fuel_result" placeholder="Here's Your Car Mileage :">
+                    <button class="clearfuel">Clear</button>
+                    <button class="fuelcalculate">Calculate</button>
+                </div> 
+            </div>
+            <div class="time">
+                <div class="uppermoney">
+                    <p class="uppertext">Here's Your Time Converter</p>
+                    <i class="fa-solid fa-clock" id="moneyicon"></i>
+                </div>
+                <div class="belowmoney">
+                     <select name="select" class="selecttime">
+                        <option value="disable">Please Choose The Unit</option>
+                        <option value="day">Day</option>
+                        <option value="week">Week</option>
+                        <option value="month">Month</option>
+                        <option value="year">Year</option>
+                        <option value="second">Second</option>
+                        <option value="minute">Minute</option>
+                        <option value="millisecond">Millisecond</option>
+                        <option value="microsecond">Microsecond</option>
+                        <option value="nanosecond">Nanosecond</option>
+                    </select>
+                    <input type="text" class="time_input" placeholder="Enter The Time In Hour :">
+                    <input type="text" class="time_result" placeholder="Here's Your Converted Result :">
+                    <button class="cleartime">Clear</button>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

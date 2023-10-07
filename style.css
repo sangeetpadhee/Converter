@@ -1,0 +1,685 @@
+body{
+background-color: rgb(0, 255, 170);
+
+
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 9%;
+    margin-left: 7%;
+    
+}
+
+/* .show{
+display: flex;
+align-items: center;
+
+} */
+
+
+.allapps{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+
+/* BUTTONS DISPLAY HEREEEEEEEEEEEEEE */
+
+.centre{
+    display: flex;
+    flex-direction: column;
+}
+.centremid{
+    display: flex;
+    flex-direction: column;
+}
+.centrebelow{
+    display: flex;
+    flex-direction: column;
+}
+.appsc{
+    color: #000000;
+    font-weight: 100;
+    cursor: pointer;
+    border: none;
+    box-shadow: black 5px 2px 2px 1px;
+    width: 250px;
+    height: 60px;
+    border-radius: 80px;
+    font-family: sans-serif;
+    background-color: lightcoral;
+    font-size: 15px;
+}
+.appss{
+    color: #000000;
+    font-weight: 100;
+    cursor: pointer;
+    border: none;
+    box-shadow: black 5px 2px 2px 1px;
+    width: 250px;
+    height: 60px;
+    border-radius: 80px;
+    font-family: sans-serif;
+    background-color: lightcoral;
+    font-size: 15px;
+}
+.appsc:hover{
+    color: #ffffff;
+    background-color: rgb(85, 96, 168);
+    height: 80px;
+    width: 270px;
+    transition: 0.2s ease-in-out;
+}
+.clickme{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(56, 171, 243);
+    border-radius: 80px;
+    margin-left: -5px;
+}
+
+/* CONTAINER DISPLAY */
+
+
+.container{
+    display: none;
+    height: 460px;
+    width: 380px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(360deg, #e4f68cac 0%, #5f7bf7cc 100%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.821) -5px 7px 5px;
+    margin-left: 300px;
+}
+
+/* MONEY CONVERTER */
+.money{
+    display: none;
+}
+
+.uppermoney{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uppertext{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 30px;
+}
+#moneyicon{
+    font-size: 80px;
+    color: #ffffff;
+}
+.belowmoney{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rupee_input{
+width: 280px;
+height: 40px;
+border-radius: 12px;
+font-size: 16px;
+border: none;
+margin-top: 20px;
+text-align: center;
+}
+.selectcountry{
+cursor: pointer;
+text-align: center;
+width: 220px;
+height: 35px;
+border-radius: 12px;
+border: 2px solid black;
+margin-top: 22px;
+}
+
+.money_result{
+width: 280px;
+height: 40px;
+border-radius: 12px;
+font-size: 16px;
+border: none;
+margin-top: 22px;
+text-align: center;
+}
+.clearmoney{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* TEMPERATURE */
+
+.temperature{
+    display: none;
+}
+.temperature_input{
+    width: 280px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+    }
+    .selecttemperature{
+    cursor: pointer;
+    text-align: center;
+    width: 220px;
+    height: 35px;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-top: 22px;
+    }
+    
+    .temperature_result{
+    width: 280px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 22px;
+    text-align: center;
+    }
+    .cleartemperature{
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    /* LENGTH CONVERTER */
+
+    .length{
+        display: none;
+    }
+    .length_input{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+        }
+    .selectlength{
+        cursor: pointer;
+        text-align: center;
+        width: 220px;
+        height: 35px;
+        border-radius: 12px;
+        border: 2px solid black;
+        margin-top: 22px;
+        }
+        
+    .length_result{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 22px;
+        text-align: center;
+        }
+    .clearlength{
+            cursor: pointer;
+            width: 100px;
+            height: 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            border: none;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        /* AREA */
+
+    .area{
+        display: none;
+    }
+    .selectarea{
+        cursor: pointer;
+        text-align: center;
+        width: 220px;
+        height: 35px;
+        border-radius: 12px;
+        border: 2px solid black;
+        margin-top: 20px;
+        }
+/* FOR SQUARE  */
+
+
+.forsquare{
+    display: none;
+}
+
+    .arealength_input{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 48px;
+     }
+     .areabreadth_input{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 48px;
+     }   
+    .areasquare_result{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 48px;
+        }
+    .clearareasquare{
+            cursor: pointer;
+            width: 100px;
+            height: 30px;
+            border-radius: 12px;
+            font-size: 16px;
+            border: none;
+            margin-top: 15px;
+            text-align: center;
+            margin-left: 40px;
+        }
+    .areasquareresult{
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        border-radius: 12px;
+         font-size: 16px;
+         border: none;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 70px;
+        background-color: rgba(255, 0, 0, 0.745);
+    }
+
+        /* FOR CIRCLE */
+    .forcircle{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+        
+    .circlearea_input{
+         width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .circlearea_result{
+        width: 280px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 22px;
+        text-align: center;
+    }
+    .clearcirclearea{
+        cursor: pointer;
+        width: 100px;
+        height: 30px;
+        border-radius: 12px;
+        font-size: 16px;
+        border: none;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+/* FUEL CONSUMPTION CONVERTER */
+.fuel{
+    display: none;
+}
+
+.fuel_input{
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+    }
+     
+.fuelprice_input{
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    }
+.fuel_result{
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    }
+.fuelkm_result{
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    text-align: center;
+    }
+.clearfuel{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-left: -190px;
+    margin-top: 14px;
+    text-align: center;
+    }
+.fuelcalculate{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: -28px;
+    margin-left: 190px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.745);
+}
+/* TIME CONVERTER */
+
+.time{
+    display: none;
+}
+.selecttime{
+    cursor: pointer;
+    text-align: center;
+    width: 220px;
+    height: 35px;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-top: 22px;
+    }
+
+.time_input{
+    width: 280px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+    }
+.time_result{
+    width: 280px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 22px;
+    text-align: center;
+    }
+
+.cleartime{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 40px;
+    text-align: center;
+    }
+
+
+/* FOR MOBILE    ====   1 */
+
+@media screen and (max-width: 600px) {
+    .wrapper{
+        margin-top: 35px;
+        justify-content: center;
+    }
+    .centre{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-top: -20px;
+        gap: 20px;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .centremid{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-left: 90px;
+        margin-top: 8px;
+    }
+    .centrebelow{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-top: 5px;
+        gap: 20px;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    @keyframes pop {
+        0%{
+          transform: scale(0);
+        }
+        75%{
+          transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+      }
+    .appsc{
+        margin-top: -20px;
+        cursor: pointer;
+        border: none;
+        box-shadow: black 5px 2px 2px 1px;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: lightcoral;
+        font-size: 10px;
+    }
+    .appss{
+        margin-top: -20px;
+        cursor: pointer;
+        border: none;
+        box-shadow: black 5px 2px 2px 1px;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: lightcoral;
+        font-size: 10px;
+    }
+    .appsc:hover{
+        color: #ffffff;
+        background-color: rgb(85, 96, 168);
+        height: 45px;
+        width: 108px;
+        transition: 0.2s ease-in-out;
+    }
+
+/* CONTAINER DISPLAY */
+
+
+.container{
+    margin-top: 20px;
+    display: none;
+    border: 1px solid black;
+    height: 440px;
+    width: 380px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(360deg, #e4f68cac 0%, #5f7bf7cc 100%);
+    margin-left: -22px;
+    box-shadow: rgba(0, 0, 0, 0.821) 0px 0px 0px;
+
+}
+
+
+
+}
+
+/* FOR MOBILE   ==== 2 */
+
+@media screen and (max-width: 650px) and (min-width: 600px) {
+    .wrapper{
+        margin-top: 35px;
+        justify-content: center;
+    }
+    .centre{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-top: -20px;
+        gap: 20px;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .centremid{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-left: 92px;
+        margin-top: 8px;
+    }
+    .centrebelow{
+        animation-name: pop;
+        animation-duration: 1.4s;
+        margin-top: 5px;
+        gap: 20px;
+        margin-left: -30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    @keyframes pop {
+        0%{
+          transform: scale(0);
+        }
+        75%{
+          transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+      }
+    
+    .appsc{
+        margin-top: -20px;
+        cursor: pointer;
+        border: none;
+        box-shadow: black 5px 2px 2px 1px;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: lightcoral;
+        font-size: 10px;
+    }
+    .appss{
+        margin-top: -20px;
+        cursor: pointer;
+        border: none;
+        box-shadow: black 5px 2px 2px 1px;
+        width: 100px;
+        height: 40px;
+        border-radius: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: lightcoral;
+        font-size: 10px;
+    }
+    .appsc:hover{
+        color: #ffffff;
+        background-color: rgb(85, 96, 168);
+        height: 45px;
+        width: 108px;
+        transition: 0.2s ease-in-out;
+    }
+
+/* CONTAINER DISPLAY */
+
+
+.container{
+    margin-top: 20px;
+    display: none;
+    border: 1px solid black;
+    height: 440px;
+    width: 380px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(360deg, #e4f68cac 0%, #5f7bf7cc 100%);
+    margin-left: -22px;
+    box-shadow: rgba(0, 0, 0, 0.821) 0px 0px 0px;
+
+}
+
+
+
+}
+
+/* FOR MOBILE */
+
+@media screen and (max-width: 1015px) and (min-width: 650px) {
+ /* CONTAINER DISPLAY */
+
+
+.container{
+    margin-top: -470px;
+    display: none;
+    height: 460px;
+    width: 380px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(360deg, #e4f68cac 0%, #5f7bf7cc 100%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.821) -5px 7px 5px;
+    margin-left: 300px;
+}   
+}
